@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DATA PENGGUNA VENDING MACHINE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*  */
+    body {
+      background-image: url(nusantara.jpg);
+      background-position-x: center;
+    }
+    #form-container {
+      width: 500px;
+      margin: 0 auto;
+      background: transparent;
+      backdrop-filter: blur(10px);
+      border: 2px solid #553710;
+      border-radius: 30px;
+      padding: 30px;
+    }
+    #form-container h2 {
+      text-align: center;
+      color: #000000;
+    }
+    #form-container input[type="text"], #form-container input[type="date"], #form-container input[type="tel"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 2px solid #683a3a;
+      border-radius: 50px;
+    }
+    #form-container input[type="submit"] {
+      background-color: #4e2a2a;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    #form-container input[type="submit"]:hover {
+      background-color: #5539398e;
+    }
+    #footer {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 20px;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="form-container">
+    <h2>DATA PENGGUNA VENDING MACHINE</h2>
+    <!-- akses link script app -->
+    <form action="https://script.google.com/macros/s/AKfycbw9JSDiaMCN3QDNNiS6mAzgU3sb3Alm9fO2OivOc2jhikZavm-fquaogHA0_Myxpq6Sig/exec" method="post">
+    <!-- end akses  -->
+
+        <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="ktp">Asal Daerah:</label>
+      <input type="text" id="asal_daerah" name="asal_daerah" required>
+      <label for="tgl_lahir">Bahasa Ibu:</label>
+      <input type="text" id="bahasa_ibu" name="bahasa_ibu" required>
+      <input type="submit" value="Simpan Data">
+    </form>
+  </div>
+
+  <div id="footer">
+    XIA
+  </div>
+
+</body>
+</html>
